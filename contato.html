@@ -5,27 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="./visual.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
-    <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome"><br>
-        <label for="snome">Sobrenome:</label><br>
-        <input type="text" id="snome" name="snome"><br>
-        <label for="datanasc">Data de Nascimento</label><br>
-        <input type="date" required><br>
-        <label for="tel">Telefone:</label><br>
-        <input type="tel" id="tel" name="tel"><br>
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <input type="radio" id="fisica" name="tipo_pessoa" value="fisica">
-        <label for="fisica">Pessoa fisica</label><br>
-        <input type="radio" id="juridica" name="tipo_pessoa" value="juridica">
-        <label for="fisica">Pessoa Juridica</label><br>
-        <br>
-        <input type="submit" id="Enviar">
-    </form>
+    <div class="header">
+        <a href="" class="logo">José Guilherme</a>
+        <div class="header-direita">
+            <a href="./index.html">
+                <h1>Home</h1>
+            </a>
+            <a href="./contato.html">
+                <h1>Contato</h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="formulario">
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="snome">Sobrenome:</label><br>
+            <input type="text" id="snome" name="snome"><br>
+            <label for="datanasc">Data de Nascimento</label><br>
+            <input type="date" required><br>
+            <label for="tel">Telefone:</label><br>
+            <input type="tel" id="tel" name="tel"><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label>
+            <input type="radio" id="pessoaFisica" name="tipoPessoa" value="fisica" onclick="updateLabel()" checked>Pessoa Física</label>
+            <label>
+            <input type="radio" id="pessoaJuridica" name="tipoPessoa" value="juridica" onclick="updateLabel()">Pessoa Jurídica</label>
+            <br>
+            <label id="cpfCnpjLabel" for="cpfCnpj">CPF</label>
+            <input type="number" id="cpfCnpj" name="cpfCnpj">
+        </form>
+            <br>
+            <input type="submit" id="Enviar">
+        </form>
+    </div>
 </body>
 
 </html>
