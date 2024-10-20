@@ -11,20 +11,26 @@
     <script src="./script.js" defer></script>
 </head>
 
-<body>
+<body>  
     <div class="header">
         <a href="" class="logo">José Guilherme</a>
         <div class="header-direita">
             <a href="./index.html">
                 <h1>Home</h1>
             </a>
-            <a href="./github.html">
-                <h1>Github</h1>
-            </a>
+            <a href="./github.html"><h1>Github</h1></a>
+            <a href="./servicos.html"><h1>Serviços</h1></a>
             <a href="./contato.html">
                 <h1>Contato</h1>
             </a>
         </div>
+    </div>
+
+    <div class="caixa-texto">
+        <h1>Contato</h1>
+        <p>Se você deseja adquirir algum dos meus serviços ou obter mais informações, fico à disposição para ajudar. 
+            Para facilitar o processo de contato, basta preencher o formulário disponível. Assim, poderei entender melhor suas necessidades e fornecer o suporte necessário de forma rápida e eficiente. Não hesite em entrar em contato, estou pronto para ajudar!
+        </p>
     </div>
 
     <div class="formulario">
@@ -49,6 +55,16 @@
             <label id="cpfCnpjLabel" for="cpfCnpj">CPF</label>
             <input type="number" id="cpfCnpj" name="cpfCnpj">
             <br>
+            <label for="tipo-servico">Tipo de serviço:</label><br>
+            <select id="tipo-servico" name="tipo-servico">
+                <option value="estatica">Página Estática</option>
+                <option value="dinamica">Página Dinâmica</option>
+                <option value="avancada">Página Avançada</option>
+                <option value="super-avancada">Página Super Avançada</option>
+            </select>
+            <br>
+            <label for="pedido">Descreva o seu pedido:</label><br>
+            <textarea id="pedido" name="pedido" rows="4" cols="50"></textarea>
             <input type="submit" id="Enviar">
     </div>
 </body>

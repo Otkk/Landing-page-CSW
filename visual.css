@@ -111,3 +111,37 @@ p {
   margin: auto;
   display: block;
 }
+
+#interess {
+  text-align: center;
+}
+
+.tabela {
+  color: white;
+  font-family: monospace;
+}
+
+.tabela h1 {
+  text-align: center;
+}
+.tabela table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.tabela th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.tabela th {
+  background-color: #000000;
+  color: white;
+}
+.tabela tr:hover {
+  background-color: #f1f1f1;
+}
+.tabela td {
+  font-size: 18px;
+}
